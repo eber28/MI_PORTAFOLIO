@@ -58,12 +58,14 @@ main { padding-top: 80px; }
 .sobre-mi-container { display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; max-width: 1000px; margin: 0 auto; text-align: left; align-items: center; }
 .sobre-mi-bio { display: flex; align-items: center; gap: 1.5rem; }
 .foto-perfil { 
+
     width: 200px; 
     height: 300px;
     border-radius: 20%; 
     display: flex;
     object-fit: cover; 
     border: 5px solid var(--color-primario); 
+    
 }
 
 /* --- CAMBIO: HABILIDADES EN VERTICAL --- */
