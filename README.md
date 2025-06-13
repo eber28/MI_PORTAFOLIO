@@ -8,3 +8,5 @@
  - [x] Actividades favoritas
 
 Observacion la pagina debera tener al menos una imagen
+
+

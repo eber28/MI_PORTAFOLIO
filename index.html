@@ -3,66 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
+    <title>Portafolio de eber</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body id="inicio"> <!-- NUEVO: ID para el enlace de "Inicio" -->
+
     <header>
-        <h1 class="h1">EBER ROMAN</h1>
-        <a href="inicio">INICIO</a>
-        <a href="sobremi">SOBRE MI</a>
-        <a href="proyectos">PROYECTOS</a>
-        <a href="contacto">CONTACTO</a>
+        <nav>
+            <a href="#inicio" class="logo">EBER ROMAN</a> <!-- El logo también lleva al inicio -->
+            <ul>
+                <!-- NUEVO: Enlace a Inicio -->
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#sobre-mi">SOBRE MI</a></li>
+                <li><a href="#proyectos">PROYECTOS</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="logo">
-        <a href="https://wa.me/1234567890" target="_blank"><img src="./assets/whatsapp.svg" alt="whatsapp" width="5%"></a>
-        <a href="https://t.me/usuario" target="_blank"><img src="./assets/telegram.svg" alt="telegram" width="5%"></a>
-        <a href="https://www.facebook.com/" target="_blank"><img src="./assets/facebook.svg" alt="telegram" width="5%"></a>
-    </section>
     <main>
-        <section class="parrafo">
+        <!-- La sección hero ahora es el destino del enlace #inicio -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Hola, soy Eber</h1>
+                <p>Desarrollador Web Junior | Apasionado por la tecnología y el diseño</p>
+                <a href="https://docs.google.com/document/d/1H5oG-m3XvjXfhktG31BLwnivXmLtlq2B9yC3C7GzD3w/edit?usp=sharing" class="btn">DESCARGA CV</a>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="seccion">
             <h2>SOBRE MI</h2>
-            <p>Soy un apasionado del desarrollo web, especializado en crear experiencias digitales atractivas y funcionales.
-                me enfoco en diseñar sitios web optimizados,responsivos y con una excelente usabilidad.
-                Siempre busco mejorar mis proyectos mediante buenas prácticas.
-                Mi objetivo es desarrollar soluciones creativas y eficientes para la web.</p>
+            <div class="sobre-mi-container">
+                <div class="sobre-mi-bio">
+                    <figure>
+                        <img src="/public/WhatsApp Image 2025-06-13 at 10.20.09 AM.jpeg" alt="mi foto" class="foto-perfil">
+                    </figure>
+                    <p>
+                        ¡Bienvenido a mi portafolio! Soy un entusiasta del desarrollo web que está comenzando su viaje en el mundo de la programación. 
+                        Actualmente estoy aprendiendo HTML y CSS para construir interfaces de usuario atractivas y funcionales. 
+                        Me encanta resolver problemas y estoy ansioso por aplicar mis habilidades en proyectos emocionantes.
+                    </p>
+                </div>
+                
+                <aside class="habilidades">
+                    <h3>Habilidades Técnicas</h3>
+                    <ul class="habilidades-lista"> <!-- La estructura HTML no cambia, solo el CSS -->
+                        <li><i class="fab fa-html5"></i> HTML5</li>
+                        <li><i class="fab fa-css3-alt"></i> CSS3</li>
+                        <!-- Añade aquí más habilidades a medida que las aprendas -->
+                        <li><i class="fab fa-js"></i> JavaScript</li>
+                        <li><i class="fab fa-git-alt"></i> Git</li>
+                    </ul>
+                </aside>
+            </div>
         </section>
 
-        <section class="info" onclick="window.location.href='pages/hobbies.html'">
-            <h2>Hobbies</h2>
-            <ul>
-                <li>Programación web</li>
-                <li>Diseño de logotipos</li>
-                <li>aprender fotografia</li>
+        <!-- Sección de Proyectos sin cambios -->
+        <section id="proyectos" class="seccion">
+            <h2>MIS PROYECTOS</h2>
+            <div class="proyectos-grid">
+                <article class="tarjeta-proyecto">
+                    <img src="img/proyecto1.jpg" alt="Imagen del Proyecto 1">
+                    <h3>Proyecto Uno</h3>
+                    <p>Una página de aterrizaje para un café local, creada con HTML5 y CSS3.</p>
+                    <a href="#" target="_blank">Ver Proyecto</a>
+                </article>
+
+                <article class="tarjeta-proyecto">
+                    <img src="img/proyecto2.jpg" alt="Imagen del Proyecto 2">
+                    <h3>Proyecto Dos</h3>
+                    <p>Un clon de la página principal de Google, enfocado en la estructura semántica de HTML.</p>
+                    <a href="#" target="_blank">Ver Proyecto</a>
+                </article>
+
+                <article class="tarjeta-proyecto">
+                    <img src="img/proyecto3.jpg" alt="Imagen del Proyecto 3">
+                    <h3>Proyecto Tres</h3>
+                    <p>Una tarjeta de perfil personal con efectos de hover en CSS.</p>
+                    <a href="#" target="_blank">Ver Proyecto</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto" class="seccion">
+            <h2>Contacto</h2>
+            <p>¡Hablemos! Puedes encontrarme en las siguientes plataformas:</p>
+            <ul class="redes-sociales"> <!-- La estructura HTML no cambia, solo el CSS -->
+                <li><a href="eberromanpumachahua@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+                <li><a href="https://www.linkedin.com/in/eber-rp-46717a36a/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="https://github.com/eber28" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
             </ul>
-        </section>
-
-        <section class="info" onclick="window.location.href='pages/pasatiempos.html'">
-            <h2>Pasatiempos</h2>
-            <ul>
-                <li>explorar juegos</li>
-                <li>Ver películas y animes</li>
-                <li>probar videojuegos</li>
-            </ul>
-        </section>
-
-        <section class="info" onclick="window.location.href='pages/actividades_favoritas.html'">
-            <h2>Actividades favoritas</h2>
-            <ul>
-                <li>Crear proyectos en HTML y CSS</li>
-                <li>Optimizar sitios web para SEO</li>
-                <li>Integrar redes sociales en mis desarrollos</li>
-            </ul>
-        </section>
-
-        <section class="imagen">
-            <h2>Mi Imagen</h2>
-            <img src="assets/minion.png" alt="Una imagen de un minion">
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2025 EBERCITO | Mi Página Personal</p>
+        <p>Creado con ❤️ por EBER ROMAN © 2025</p>
     </footer>
+
 </body>
 </html>
