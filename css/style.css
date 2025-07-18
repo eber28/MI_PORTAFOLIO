@@ -59,8 +59,8 @@ main { padding-top: 80px; }
 .sobre-mi-bio { display: flex; align-items: center; gap: 1.5rem; }
 .foto-perfil { 
 
-    width: 200px; 
-    height: 300px;
+    width: 250px; 
+    height: 350px;
     border-radius: 20%; 
     display: flex;
     object-fit: cover; 
